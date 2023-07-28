@@ -55,7 +55,7 @@
                     // Include config file
                     require_once "../config.php";
                     
-                    // For extra protection these are the columns of which the user can sort by (in your database table).
+                    // For extra protection these are the columns of which the user can sort by database table.
                     $columns = array('ID','description');
                     // Only get the column if it exists in the above columns array, if it doesn't exist the database table will be sorted by the first item in the columns array.
                     $column = isset($_GET['column']) && in_array($_GET['column'], $columns) ? $_GET['column'] : $columns[0];

@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     // Check input errors before inserting in database
-    if(empty($descriptionerr) ){
+    if(empty($description_err) ){
         // Prepare an insert statement
         $sql = "INSERT INTO course ( ID,description ) VALUES (  ?,?)";
          
